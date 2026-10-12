@@ -25,6 +25,20 @@ footer{padding:26px 0;color:var(--muted);font-size:.85rem;text-align:center;bord
 .brandbar{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto 22px;flex-wrap:wrap}.brand-logo{width:68px;height:68px;object-fit:contain;border-radius:12px}.brand-email{font-weight:750;color:#172554;text-decoration:none;border:1px solid #dbe3ee;border-radius:999px;padding:8px 13px;background:#fff;font-size:.92rem}.brand-email:hover{text-decoration:underline}@media(max-width:500px){.brand-logo{width:54px;height:54px}.brandbar{gap:9px}</style>
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="fixed top-0 inset-x-0 z-50 glass">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo.png" alt="Felora Labs" class="h-10 w-auto object-contain" />
+        <span class="font-semibold text-lg tracking-wide hidden sm:inline">Felora Labs</span>
+      </a>
+      <div class="flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="text-white hover:text-brand-400 transition">Home</a>
+        <a href="members.html" class="text-gray-400 hover:text-brand-400 transition">Members</a>
+        <a href="#contact" class="px-4 py-2 rounded-full bg-brand-500/20 text-brand-400 border border-brand-500/40 hover:bg-brand-500/30 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
 <header class="hero">
   <div class="wrap">
     <div class="brandbar"><img class="brand-logo" src="https://cdn.discordapp.com/attachments/1558363507727138856/1559122996377944084/grok_1791095256909.jpg?ex=6acdedf1&amp;is=6acc9c71&amp;hm=04f5fbffdaeca4e3a8a86f12280c547be9cfed3f5c63cf6c16541b61f059fb27" alt="Felora Labs logo"><a class="brand-email" href="mailto:felora.labs@gmail.com">felora.labs@gmail.com</a></div><div class="eyebrow">Felora Labs · Website design & development</div>
