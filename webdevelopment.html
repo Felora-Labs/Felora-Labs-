@@ -23,6 +23,48 @@ h3{font-size:1.25rem;color:var(--ink);margin:8px 0 2px}.price{font-size:2.15rem;
 footer{padding:26px 0;color:var(--muted);font-size:.85rem;text-align:center;border-top:1px solid var(--line)}
 @media(max-width:850px){.grid{grid-template-columns:1fr}.summary{min-height:0}.two-col,.terms{grid-template-columns:1fr}.card{padding:23px}.hero{padding-top:55px}.cta{padding:30px 22px}}
 .brandbar{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto 22px;flex-wrap:wrap}.brand-logo{width:68px;height:68px;object-fit:contain;border-radius:12px}.brand-email{font-weight:750;color:#172554;text-decoration:none;border:1px solid #dbe3ee;border-radius:999px;padding:8px 13px;background:#fff;font-size:.92rem}.brand-email:hover{text-decoration:underline}@media(max-width:500px){.brand-logo{width:54px;height:54px}.brandbar{gap:9px}</style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              900: '#0c4a6e',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #38bdf8 0%, #e0f2fe 50%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-glow {
+      background: radial-gradient(ellipse at center, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
